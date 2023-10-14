@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div style="text-align: center;">
+            
+        <h1> Login </h1>
+        <form (ngSubmit)="isValid()">
+            <div >
+                <label> Email Address </label> <br>
+                <input type="email" name="email" [(ngModel)]="email">
+                <pre></pre>
+
+                <label> Password </label> <br>
+                <input type="password" name="password" [(ngModel)] = "password">
+
+                <pre></pre>
+                <button type="submit"> Login </button>
+            </div>
+        </form>
+        </div>
+    </body>
+
+    </html>
+
