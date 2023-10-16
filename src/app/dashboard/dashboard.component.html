@@ -15,7 +15,15 @@
             <li *ngFor="let expense of expenses">
               {{ expense.name }} - ${{ expense.amount }}
             </li>
+            
+              <li *ngFor="let expense of expenses">
+                {{ expense.name }} - ${{ expense.amount }}
+                <button (click)="editExpense(expense)">Edit</button> &nbsp;
+                <button (click)="addExpense()"> Save </button> &nbsp;
+                <button (click)="cancelEdit()"> Cancel </button>
+              </li>
           
+            
       </div>
       <div>
         <h3>Total Amount: ${{ totalAmount }}</h3>
